@@ -1,0 +1,93 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #121d4d;
+  color: white;
+}
+.top {
+  padding: 50px;
+}
+img {
+  width: 250px;
+}
+p {
+  font-size: 20px;
+}
+
+.job-picture {
+  width: 300px;
+}
+
+.job {
+  border: solid #2cf59e 1.5px;
+  width: 400px;
+  text-align: center;
+  border-radius: 10%;
+}
+.container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 50px;
+  grid-column-gap: 20px;
+}
+
+a {
+  color: #a5a8c4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2cf59e;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-content: space-around;
+  border-bottom: #96ffd9 solid 1px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.heading {
+  text-align: center;
+}
+
+.home {
+  text-align: center;
+}
+
+.inner {
+  margin-top: 100px;
+}
+
+#go-button {
+  background-color: black;
+  padding: 10px;
+  color: white;
+}
+#go-button:hover {
+  color: #2cf59e;
+}
+
+@media screen and (max-width: 800px) {
+  ul {
+    flex-direction: column;
+    border-bottom: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
